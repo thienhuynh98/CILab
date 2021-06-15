@@ -3,7 +3,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
 
 public class CILabTest {
 
@@ -21,17 +20,15 @@ public class CILabTest {
 
     @Test
     public void detectCapitalUseTest1() {
-        CILab test = new CILab();
-        test.setString("Google");
-        boolean actual = test.detectCapitalUse();
+        myString.setString("Google");
+        boolean actual = myString.detectCapitalUse();
         boolean expect = true;
         assertEquals(actual, expect);
     }
     @Test
     public void detectCapitalUseTest2() {
-        CILab test = new CILab();
-        test.setString("GOogle");
-        boolean actual = test.detectCapitalUse();
+        myString.setString("Google");
+        boolean actual = myString.detectCapitalUse();
         boolean expect = false;
         assertEquals(actual, expect);
     }
