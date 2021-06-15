@@ -27,7 +27,7 @@ public class CILabTest {
     }
     @Test
     public void detectCapitalUseTest2() {
-        myString.setString("Google");
+        myString.setString("gOOGLE");
         boolean actual = myString.detectCapitalUse();
         boolean expect = false;
         assertEquals(actual, expect);
